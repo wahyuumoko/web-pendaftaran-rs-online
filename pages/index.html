@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Pasien</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="../images/rsip.jpg" class="img" alt="Logo Rumah Sakit">
+        <div class="nav-container">
+            <nav class="nav">
+                <a href="index.html" class="nav-link" data-page="index.html">Beranda</a>
+                <a href="jadwal-dokter.html" class="nav-link" data-page="jadwal-dokter.html">Jadwal Dokter</a>
+                <a href="https://wa.me/6282138402147" class="nav-link" data-page="Kontak" target="_blank">Kontak</a>
+            </nav>
+            <button class="login-button" onclick="window.location.href='../pages/login.html'">Login</button>
+        </div>
+    </div>
+    <h1>Pendaftaran Pasien</h1>
+    <div class="container">
+        <div class="card">
+            <i class="fas fa-user"></i>
+            <h3>Daftar Kontrol</h3>
+            <p>Masuk untuk Daftar Check-up atau Kontrol penyakit.</p>
+            <a href="daftar-kontrol.html" class="button">Masuk</a>
+        </div>
+        <div class="card">
+            <i class="fas fa-user-plus"></i>
+            <h3>Pasien Baru</h3>
+            <p>Daftar sekarang untuk mendapatkan layanan medis.</p>
+            <a href="data-pasien.html" class="button">Daftar</a>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2025 Rumah Sakit Islam Indonesia. Semua hak dilindungi.
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggleButton = document.querySelector('.menu-toggle');
+            const navContainer = document.querySelector('.nav-container');
+            menuToggleButton.addEventListener('click', function () {
+                navContainer.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
