@@ -5,18 +5,101 @@ body {
     padding: 0;
     padding-bottom: 70px;
 }
-.header {
-    display: flex;
-    font-family: Arial, sans-serif;
-    margin-right: 20px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
     background-color: white;
+    padding-top: 60px;
+    transition: 0.3s;
+    z-index: 999;
 }
-.header img {
-    height: 50px;
-    margin-left: 20px;
+.process {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+}
+.content {
+    display: flex;
+    align-items: center;
+    background: #e2e8f0;
+    padding: 10px;
+    border-radius: 10px;
+}
+.content i {
+    font-size: 40px;
+    color: #2b6cb0;
+    margin-right: 15px;
+}
+.content p {
+    font-size: 16px;
+    margin: 0;
+    text-align: justify;
+}
+.step { 
+    display: none; 
+}
+
+.step.active { 
+    display: block; 
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar .img {
+    width: 150px;
+    display: block;
+    margin: 0 auto 30px;
+}
+
+.sidebar .nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .nav-link {
+    color: black;
+    text-decoration: none;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+    width: 20px;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #0056b3;
+}
+.login-button {
+    width: 90%;
+    margin: 20px auto;
+    display: block;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
 }
 h1 {
     text-align: center;
@@ -39,43 +122,17 @@ th {
     background-color: #007bff;
     color: white;
 }
-.header img {
-    height: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
+.text-hadir {
+    padding: 12px;
+    text-align: center;
+    font-weight: bolder;
+    color: green;
 }
-.nav-container {
-    display: flex;
-    align-items: center;
-    gap: 20px; /* Space between links */
-}
-.nav {
-    display: flex;
-    gap: 20px;
-}
-.nav a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
+.text-tdk-hadir {
+    padding: 12px;
+    text-align: center;
     font-weight: bold;
-    padding-bottom: 5px;
-    position: relative;
-}
-.nav a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 3px;
-    background-color: #007bff;
-    transition: width 0.3s ease-in-out;
-}
-.nav a:hover::after {
-    width: 100%;
-}
-.nav a:hover {
-    color: #007bff;
+    color: red;
 }
 .login-button {
     padding: 10px 20px;
@@ -87,11 +144,20 @@ th {
     font-size: 16px;
     font-weight: bold;
 }
+.main-content {
+    margin-left: 0;
+    padding: 20px;
+    transition: 0.3s;
+}
+.main-content.active {
+    margin-left: 250px;
+}
 .container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
-    padding: 50px;
+    padding: 20px;
 }
 .container-a {
     max-width: 1000px;
@@ -108,7 +174,8 @@ th {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 320px;
+    width: auto;
+    margin: auto;
     max-width: 100%;
 }
 .card i {
@@ -282,6 +349,10 @@ th {
 .p {
     text-align: left;
  }
+.p-i {
+    text-wrap: inherit;
+    text-align: justify;
+}
 .download {
     padding: 1rem;
     background-color: #007bff;
