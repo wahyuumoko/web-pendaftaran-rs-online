@@ -40,19 +40,54 @@
             <div class="container-a">
                 <form>
                     <h1>Login Pasien</h1>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Nomor Pasien <span class="required">*</span></label>
-                            <input type="text" placeholder="Masukkan Nomor Pasien" required>
-                            <div class="form-group">
-                                <label>Tanggal Lahir <span class="required">*</span></label>
-                                 <input type="date" required>
-                            </div>
+                    <div class="tab-container">
+                        <button class="tab-btn active" onclick="showTab('login')">Login</button>
+                        <button class="tab-btn" onclick="showTab('register')">Register</button>
                     </div>
-                    <button type="button" class="submit-btn">Login Pasien</button>
+                    
+                    <div id="login" class="tab-content active">
+                        <p class="description">Masukan Nomor Pasien dan Tanggal Lahir</p>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Nomor Pasien <span class="required">*</span></label>
+                                <input type="text" placeholder="Masukkan Nomor Pasien" required>
+                                <div class="form-group">
+                                    <label>Password<span class="required">*</span></label>
+                                    <input type="password" placeholder="Masukkan Password" required>
+                                </div>
+                        </div>
+                        <button type="button" class="submit-btn">Login Pasien</button>
+                </div>
             </div>
-        </div>
-
+                    
+                    <div id="register" class="tab-content">
+                        <p class="description">Register dilakukan jika anda belum mempunyai akun. Proses register hanya sekali saja dan digunakan untuk membuat akun yang nantinya berfungsi untuk login</p>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Nama Pasien <span class="required">*</span></label>
+                                <input type="text" placeholder="Masukkan Nama Pasien" required>
+                                <div class="form-group">
+                                <label>NIK<span class="required">*</span></label>
+                                <input type="text" placeholder="Masukkan NIK" required>
+                                <div class="form-group">
+                                <label>Alamat Email <span class="required">*</span></label>
+                                <input type="email" placeholder="Masukkan Alamat Email" required>
+                                <div class="form-group">
+                                    <label>Tanggal Lahir <span class="required">*</span></label>
+                                     <input type="date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Password<span class="required">*</span></label>
+                                    <input type="password" placeholder="Masukkan Password" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Konfirmasi Password<span class="required">*</span></label>
+                                    <input type="password" placeholder="Konfirmasi Password" required>
+                                </div>
+                        <button type="button" class="submit-btn">Buat Akun</button>
+                        </form>
+                    </div>
+                </div>
     </body>
 
 </html>
