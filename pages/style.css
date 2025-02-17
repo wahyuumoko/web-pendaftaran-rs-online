@@ -315,16 +315,6 @@ th {
     font-size: 16px;
 }
 
-.button-kontrol {
-    display: inline-block;
-    padding: 12px 20px;
-    background: green;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
 .button:hover {
     background: #003d82;
 }
