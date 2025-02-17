@@ -479,7 +479,27 @@ th {
 }
 .download {
     padding: 1rem;
-    background-color: #007bff;
+    background-color: #48B04D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+.email {
+    padding: 1rem;
+    background-color: #2195FA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+.print {
+    padding: 1rem;
+    background-color: #FF9500;
     color: white;
     border: none;
     border-radius: 5px;
