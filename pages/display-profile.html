@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8" />
+    <title>Profil Pasien</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="../pages/script.js"></script>
+</head>
+<body>
+    <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="sidebar">
+        <img src="../images/rsip.jpg" class="img" alt="Logo Rumah Sakit">
+        <nav class="nav">
+            <a href="index.html" class="nav-link">
+                <i class="fas fa-home"></i>
+                Beranda
+            </a>
+            <a href="display-profile.html" class="nav-link">
+                <i class="fa-solid fa-user"></i>
+                Profil Pasien
+            </a>
+            <a href="jadwal-dokter.html" class="nav-link">
+                <i class="fas fa-calendar"></i>
+                Jadwal Dokter
+            </a>
+            <a href="https://wa.me/6282138402147" class="nav-link" target="_blank">
+                <i class="fas fa-phone"></i>
+                Kontak
+            </a>
+        </nav>
+        <button class="login-button" onclick="window.location.href='../pages/login-register.html'">
+            <i class="fas fa-sign-in-alt"></i> Login
+        </button>
+    </div>
+
+    <div class="main-content">
+        <h1>Pendaftaran Online Rawat Jalan</h1>
+            <div class="profile-card">
+                <div class="profile-header">
+                    <img src="../images/user.png" alt="Foto Pasien" class="profile-img">
+                    <p class="profile-status"><i class="fas fa-check-circle"></i> Aktif</p>
+                </div>
+                <div class="profile-body">
+                    <div class="profile-item">
+                        <i class="fas fa-user"></i> <strong>Nama:</strong> <span class="span-a">Wahyu</span>
+                    </div>
+                    <div class="profile-item">
+                        <i class="fa-solid fa-address-card"></i> <strong>NIK:</strong> <span class="span-a">3302019101010001</span>
+                    </div>
+                    <div class="profile-item">
+                        <i class="fa-solid fa-venus-mars"></i><strong>Jenis Kelamin:</strong> <span class="span-a">Laki-laki</span>
+                    </div>
+                    <div class="profile-item">
+                        <i class="fas fa-birthday-cake"></i> <strong>Tanggal Lahir:</strong> <span class="span-a">10 Januari 1990</span>
+                    </div>
+                    <div class="profile-item">
+                        <i class="fas fa-map-marker-alt"></i> <strong>Alamat:</strong> <span class="span-a">Purwokerto, Jawa Tengah</span>
+                    </div>
+                    <div class="profile-item">
+                        <i class="fas fa-file-medical"></i> <strong>No. Rekam Medis:</strong> <span class="span-a">123456789</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 Rumah Sakit Islam Purwokerto. Semua hak dilindungi.
+    </div>
+</body>
+</html>

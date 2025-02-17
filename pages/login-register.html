@@ -9,30 +9,34 @@
 
     </head>
     <body>
-            <button class="menu-toggle">
-                <i class="fas fa-bars"></i>
+        <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    
+        <div class="sidebar">
+            <img src="../images/rsip.jpg" class="img" alt="Logo Rumah Sakit">
+            <nav class="nav">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    Beranda
+                </a>
+                <a href="display-profile.html" class="nav-link">
+                    <i class="fa-solid fa-user"></i>
+                    Profil Pasien
+                </a>
+                <a href="jadwal-dokter.html" class="nav-link">
+                    <i class="fas fa-calendar"></i>
+                    Jadwal Dokter
+                </a>
+                <a href="https://wa.me/6282138402147" class="nav-link" target="_blank">
+                    <i class="fas fa-phone"></i>
+                    Kontak
+                </a>
+            </nav>
+            <button class="login-button" onclick="window.location.href='../pages/login-register.html'">
+                <i class="fas fa-sign-in-alt"></i> Login
             </button>
-        
-            <div class="sidebar">
-                <img src="../images/rsip.jpg" class="img" alt="Logo Rumah Sakit">
-                <nav class="nav">
-                    <a href="index.html" class="nav-link">
-                        <i class="fas fa-home"></i>
-                        Beranda
-                    </a>
-                    <a href="jadwal-dokter.html" class="nav-link">
-                        <i class="fas fa-calendar"></i>
-                        Jadwal Dokter
-                    </a>
-                    <a href="https://wa.me/6282138402147" class="nav-link" target="_blank">
-                        <i class="fas fa-phone"></i>
-                        Kontak
-                    </a>
-                </nav>
-                <button class="login-button" onclick="window.location.href='../pages/login.html'">
-                    <i class="fas fa-sign-in-alt"></i> Login
-                </button>
-            </div>
+        </div>
 
             <div class="main-content">
         <h1>Pendaftaran Online Rawat Jalan</h1>
@@ -66,6 +70,16 @@
                             <div class="form-group">
                                 <label>Nama Pasien <span class="required">*</span></label>
                                 <input type="text" placeholder="Masukkan Nama Pasien" required>
+                            <div class="form-group">
+                                <label>Username Pasien <span class="required">*</span></label>
+                                <input type="text" placeholder="Masukkan Username Pasien" required>
+                                <div class="form-group">
+                                    <label>Jenis Kelamin <span class="required">*</span></label>
+                                    <select required>
+                                        <option>Pria</option>
+                                        <option>Wanita</option>
+                                    </select>
+                                </div>
                                 <div class="form-group">
                                 <label>NIK<span class="required">*</span></label>
                                 <input type="text" placeholder="Masukkan NIK" required>

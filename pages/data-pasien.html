@@ -15,32 +15,37 @@
     </style>
 </head>
 <body>
-<button class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-        
-            <div class="sidebar">
-                <img src="../images/rsip.jpg" class="img" alt="Logo Rumah Sakit">
-                <nav class="nav">
-                    <a href="index.html" class="nav-link">
-                        <i class="fas fa-home"></i>
-                        Beranda
-                    </a>
-                    <a href="jadwal-dokter.html" class="nav-link">
-                        <i class="fas fa-calendar"></i>
-                        Jadwal Dokter
-                    </a>
-                    <a href="https://wa.me/6282138402147" class="nav-link" target="_blank">
-                        <i class="fas fa-phone"></i>
-                        Kontak
-                    </a>
-                </nav>
-                <button class="login-button" onclick="window.location.href='../pages/login.html'">
-                    <i class="fas fa-sign-in-alt"></i> Login
-                </button>
-            </div>
+    <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="sidebar">
+        <img src="../images/rsip.jpg" class="img" alt="Logo Rumah Sakit">
+        <nav class="nav">
+            <a href="index.html" class="nav-link">
+                <i class="fas fa-home"></i>
+                Beranda
+            </a>
+            <a href="display-profile.html" class="nav-link">
+                <i class="fa-solid fa-user"></i>
+                Profil Pasien
+            </a>
+            <a href="jadwal-dokter.html" class="nav-link">
+                <i class="fas fa-calendar"></i>
+                Jadwal Dokter
+            </a>
+            <a href="https://wa.me/6282138402147" class="nav-link" target="_blank">
+                <i class="fas fa-phone"></i>
+                Kontak
+            </a>
+        </nav>
+        <button class="login-button" onclick="window.location.href='../pages/login-register.html'">
+            <i class="fas fa-sign-in-alt"></i> Login
+        </button>
+    </div>
+
     <div class="main-content">
-    <div class="step active"> <!-- Step 1 -->
+    <div class="step active">
         <div class="container-a">
             <form>
                 <h1>Nomor Pasien</h1>
@@ -196,14 +201,27 @@
                 <h1>Alamat Pasien</h1>
                 <div class="form-row">
                     <div class="form-group">
-                        <label>Kota/Kabupaten <span class="required">*</span></label>
-                        <input type="text" placeholder="Masukkan Kota/Kabupaten" required>
+                        <label>Provinsi <span class="required">*</span></label>
+                        <select required>
+                            <option value="">Pilih Provinsi</option>
+                            <option>Sumatera Utara</option>
+                        </select>
                     </div>
             </div>
-                    <div class="form-group">
-                        <label>Provinsi <span class="required">*</span></label>
-                        <input type="text" placeholder="Masukkan Provinsi" required>
-                    </div>
+            <div class="form-group">
+                <label>Kabupaten <span class="required">*</span></label>
+                <select required>
+                    <option value="">Pilih Kabupaten</option>
+                    <option>Banyumas</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Kota<span class="required">*</span></label>
+                <select required>
+                    <option value="">Pilih Kota</option>
+                    <option>Solo</option>
+                </select>
+            </div>
 
             <div class="form-group">
                 <label>Alamat KTP <span class="required">*</span></label>
