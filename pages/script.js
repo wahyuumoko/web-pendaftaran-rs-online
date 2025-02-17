@@ -54,4 +54,30 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     window.showTab = showTab;
+
+    // Authentication button functionality
+    const authButton = document.getElementById("auth-button");
+    
+    if (authButton) {
+        const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+    
+        function updateAuthButton() {
+            if (isLoggedIn) {
+                authButton.innerHTML = '<i class="fas fa-sign-out-alt"></i> Logout';
+                authButton.style.backgroundColor = "red";
+                authButton.onclick = function () {
+                    localStorage.setItem("isLoggedIn", "false"); // Hapus status login
+                    location.reload(); // Refresh halaman
+                };
+            } else {
+                authButton.innerHTML = '<i class="fas fa-sign-in-alt"></i> Login';
+                authButton.style.backgroundColor = "blue";
+                authButton.onclick = function () {
+                    window.location.href = "../pages/login-register.html"; // Arahkan ke halaman login
+                };
+            }
+        }
+    
+        updateAuthButton();
+    }
 });
